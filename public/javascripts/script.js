@@ -5,7 +5,7 @@ var client={};
 
 navigator.mediaDevices.getUserMedia({
   video:true,
-  audio:false
+  audio:true
 })
 .then((stream)=>{
   socket.emit('newClient')
